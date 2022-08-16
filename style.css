@@ -4,7 +4,44 @@ body {
     box-sizing: border-box;
     background: linear-gradient(#fefefe, rgb(133, 198, 255), #12a5af, rgb(25, 182, 230), #fefefe, #12a5af)
 }
-
+    @media (max-width:399px) {
+        #calculator {
+            background-color: black;
+            width: 100%;
+        }
+        .operator,
+        .empty,
+        .number {
+            width: 45px !important;
+            height: 45px;
+            border: 0;
+            border-radius: 50%;
+            margin: 10px !important;
+            /* margin: 15px; */
+            float: left;
+            font-size: 14px !important;
+            font-weight: 600;
+            transition: all 0.2s;
+        }
+    }
+    
+    @media (max-width:324px) {
+        .operator,
+        .empty,
+        .number {
+            background-color: aqua !important;
+            width: 30px !important;
+            height: 30px;
+            border: 0;
+            border-radius: 50%;
+            margin: 10 !important;
+            /* margin: 15px; */
+            float: left;
+            font-size: 14px !important;
+            font-weight: 600;
+            transition: all 0.2s;
+        }
+    }
 .container {
     border-radius: 16px;
     width: 80%;
